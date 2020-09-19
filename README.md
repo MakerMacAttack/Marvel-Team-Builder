@@ -14,7 +14,7 @@ https://gateway.marvel.com
 
 ((Should I include a link to the documentation?))
 
-![JSON snippet](https://imgur.com/a/OVw3YY8)
+![JSON snippet](https://imgur.com/a/8xq76Cc)
 
 ## Wireframes - STILL NEED TO DO THIS
 
