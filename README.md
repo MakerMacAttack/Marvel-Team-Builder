@@ -10,7 +10,7 @@ This app will allow a user to search through Marvel's extensive database of supe
 
 I will be using the Marvel API.
 
-https://gateway.marvel.com
+[Marvel Gateway API](https://gateway.marvel.com)
 
 ((Should I include a link to the documentation?))
 
