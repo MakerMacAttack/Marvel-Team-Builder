@@ -12,7 +12,7 @@ I will be using the Marvel API.
 
 [Marvel Gateway API](https://gateway.marvel.com)
 
-((Should I include a link to the documentation?))
+[Documentation](https://developer.marvel.com/documentation/getting_started)
 
 ![JSON snippet](https://i.imgur.com/kAfZAI7.png)
 
