@@ -18,9 +18,23 @@ I will be using the Marvel API.
 
 ## Wireframes - STILL NEED TO DO THIS
 
-Figma
+Desktop
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+![Desktop](https://i.imgur.com/xSrQupU.png)
+
+The user will select someone from the dropdown, or input text in the text field, and then click Search.
+
+The character's profile image will appear in the main part of the screen, with one button to add to the team and another to request more info.
+
+Clicking more info will display additional information.
+
+'Add to team' will be grayed out if there are currently five members of the team. Clicking it will add the current character to the user's team.
+
+Team section will start empty and populate as the user chooses characters.
+
+Anyone who isn't leader will have a button which will make the current leader (if there is one), not a leader anymore, and make them the leader.
+
+All team characters will have a button to remove them from the team.
 
 ### MVP/PostMVP
 
