@@ -42,13 +42,11 @@ I will be using the Marvel API.
                 "comics": {
                     "available": 91,
                     "collectionURI": "http://gateway.marvel.com/v1/public/characters/1011220/comics",
-                    ],
                     "returned": 20
                 },
                 "series": {
                     "available": 41,
                     "collectionURI": "http://gateway.marvel.com/v1/public/characters/1011220/series",
-                    ],
                     "returned": 20
                 },
                 "stories": {
