@@ -14,7 +14,9 @@ I will be using the Marvel API.
 
 [Documentation](https://developer.marvel.com/documentation/getting_started)
 
-![JSON snippet](https://i.imgur.com/kAfZAI7.png)
+```JSON
+
+```
 
 ## Wireframes
 
