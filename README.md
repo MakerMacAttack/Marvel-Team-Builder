@@ -10,85 +10,11 @@ This app will allow a user to search through Marvel's extensive database of supe
 
 I will be using the Marvel API.
 
-[https://gateway.marvel.com]
+https://gateway.marvel.com
 
 ((Should I include a link to the documentation?))
 
-```JSON
-{…}
-​
-comics: {…}
-​​
-available: 91
-​​
-collectionURI: "http://gateway.marvel.com/v1/public/characters/1011220/comics"
-​​
-items: Array(20) [ {…}, {…}, {…}, … ]
-​​
-returned: 20
-​​
-<prototype>: Object { … }
-​
-description: ""
-​
-events: {…}
-​​
-available: 5
-​​
-collectionURI: "http://gateway.marvel.com/v1/public/characters/1011220/events"
-​​
-items: Array(5) [ {…}, {…}, {…}, … ]
-​​
-returned: 5
-​​
-<prototype>: Object { … }
-​
-id: 1011220
-​
-modified: "2015-11-20T12:04:34-0500"
-​
-name: "Mockingbird"
-​
-resourceURI: "http://gateway.marvel.com/v1/public/characters/1011220"
-​
-series: {…}
-​​
-available: 41
-​​
-collectionURI: "http://gateway.marvel.com/v1/public/characters/1011220/series"
-​​
-items: Array(20) [ {…}, {…}, {…}, … ]
-​​
-returned: 20
-​​
-<prototype>: Object { … }
-​
-stories: {…}
-​​
-available: 93
-​​
-collectionURI: "http://gateway.marvel.com/v1/public/characters/1011220/stories"
-​​
-items: Array(20) [ {…}, {…}, {…}, … ]
-​​
-returned: 20
-​​
-<prototype>: Object { … }
-​
-thumbnail: {…}
-​​
-extension: "jpg"
-​​
-path: "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/51e829af23af9"
-​​
-<prototype>: Object { … }
-​
-urls: Array(3) [ {…}, {…}, {…} ]
-​
-<prototype>: Object { … }
-app.js:13:13
-
-```
+(https://imgur.com/a/OVw3YY8)
 
 ## Wireframes - STILL NEED TO DO THIS
 
