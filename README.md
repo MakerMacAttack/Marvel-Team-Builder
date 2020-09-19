@@ -16,7 +16,7 @@ I will be using the Marvel API.
 
 ![JSON snippet](https://i.imgur.com/kAfZAI7.png)
 
-## Wireframes - STILL NEED TO DO THIS
+## Wireframes
 
 Desktop
 
@@ -89,6 +89,7 @@ List of features:
 | Advanced Team Functionality | H | 3hrs |  |  |
 | Basic CSS | H | 2hrs |  |  |
 | Comic Appearances | L | 2hrs |  |  |
+| Responsiveness | H | 3hrs |  |  |
 | Reduce Appearance Array | l | 3hrs |  |  |
 | Advanced CSS | L | 3hrs |  |  |
 | Wrestle with CSS more | L | 3hrs |  |  |
@@ -96,7 +97,7 @@ List of features:
 | CSS De-bugging | H | 3hrs |  |  |
 | Style Choices | L | 3hrs |  |  |
 | Keep ReadMe updated | H | 3hrs |  |  |
-| Total | H | 36hrs |  |  |
+| Total | H | 39hrs |  |  |
 
 ## Code Snippet
 
