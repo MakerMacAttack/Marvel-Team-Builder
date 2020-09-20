@@ -146,23 +146,23 @@ List of features:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Craft Specification | H | 2hrs|  |  |
+| Craft Specification | M | 2hrs|  |  |
 | Pseudocode Project | H | 3hrs|  |  |
 | Search for Characters | H | 2hrs|  |  |
-| Dropdown Menu | H | 2hrs |  |  |
+| Dropdown Menu | M | 2hrs |  |  |
 | Team Area | M | 2hrs |  |  |
 | Basic Team Functionality | L | 3hrs |  |  |
-| Advanced Team Functionality | H | 3hrs |  |  |
+| Advanced Team Functionality | L | 3hrs |  |  |
 | Basic CSS | H | 2hrs |  |  |
 | Comic Appearances | L | 2hrs |  |  |
 | Responsiveness | H | 3hrs |  |  |
 | Reduce Appearance Array | l | 3hrs |  |  |
-| Advanced CSS | L | 3hrs |  |  |
+| Advanced CSS | M | 3hrs |  |  |
 | Wrestle with CSS more | L | 3hrs |  |  |
-| Panic and fix unexpected issues | H | 3hrs |  |  |
-| CSS De-bugging | H | 3hrs |  |  |
+| Panic and fix unexpected issues | M | 3hrs |  |  |
+| CSS De-bugging | M | 3hrs |  |  |
 | Style Choices | L | 3hrs |  |  |
-| Keep ReadMe updated | H | 3hrs |  |  |
+| Keep ReadMe updated | M | 3hrs |  |  |
 | Total | H | 44hrs |  |  |
 
 ## Code Snippet
