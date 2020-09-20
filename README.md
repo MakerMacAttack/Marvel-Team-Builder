@@ -118,9 +118,11 @@ Base functionality will be largely the same for mobile. My thought would be that
 |---|---| ---|
 |Sept 18-21| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |Sept 21| Project Approval | Incomplete
-|Sept 21| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Sept 21| Specification, Psuedocode | Incomplete
+|Sept 22| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Sept 22| MVP | Incomplete
-|Sept 24| Post MVP/Styling | Incomplete
+|Sept 23| Basic Styling | Incomplete
+|Sept 24| Post MVP, Advanced Styling | Incomplete
 |Sept 25| Presentations | Incomplete
 
 ## Priority Matrix - STILL NEED TO DO THIS!
@@ -144,7 +146,8 @@ List of features:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Craft Specification | H | 3hrs|  |  |
+| Craft Specification | H | 2hrs|  |  |
+| Pseudocode Project | H | 3hrs|  |  |
 | Search for Characters | H | 2hrs|  |  |
 | Dropdown Menu | H | 2hrs |  |  |
 | Team Area | M | 2hrs |  |  |
@@ -160,7 +163,7 @@ List of features:
 | CSS De-bugging | H | 3hrs |  |  |
 | Style Choices | L | 3hrs |  |  |
 | Keep ReadMe updated | H | 3hrs |  |  |
-| Total | H | 42hrs |  |  |
+| Total | H | 44hrs |  |  |
 
 ## Code Snippet
 
