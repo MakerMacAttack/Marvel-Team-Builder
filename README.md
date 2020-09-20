@@ -116,7 +116,7 @@ Base functionality will be largely the same for mobile. My thought would be that
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Sept 18-21| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Sept 18-21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Sept 21| Project Approval | Incomplete
 |Sept 21| Specification, Psuedocode | Incomplete
 |Sept 22| Core Application Structure (HTML, CSS, etc.) | Incomplete
@@ -125,22 +125,9 @@ Base functionality will be largely the same for mobile. My thought would be that
 |Sept 24| Post MVP, Advanced Styling | Incomplete
 |Sept 25| Presentations | Incomplete
 
-## Priority Matrix - STILL NEED TO DO THIS!
+## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
-
-List of features:
--Dropdown search
--Type search
--Returns image
--Choose for team
--Remove from team
--Make Leader
---Remove Current Leader
--Basic CSS
--Advanced CSS
--Additional Info
---List of Comic Appearances
+![Priority Matrix](https://i.imgur.com/5Gx31dZ.png)
 
 ## Timeframes
 
