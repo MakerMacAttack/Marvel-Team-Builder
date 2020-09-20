@@ -90,9 +90,9 @@ Anyone who isn't leader will have a button which will make the current leader (i
 
 All team characters will have a button to remove them from the team.
 
-![Mobile 1](https://imgur.com/a/Qau81NH)
+![Mobile1](https://i.imgur.com/EpMGrwA.png)
 
-![Mobile 2](https://imgur.com/a/KFtCEc5)
+![Mobile2](https://i.imgur.com/mcTvnBx.png)
 
 ### MVP/PostMVP
 
