@@ -14,6 +14,8 @@ I will be using the Marvel API.
 
 [Documentation](https://developer.marvel.com/documentation/getting_started)
 
+Snippet of JSON retrieved from Marvel API:
+
 ```JSON
 {
 
@@ -94,6 +96,8 @@ All team characters will have a button to remove them from the team.
 
 ![Mobile2](https://i.imgur.com/mcTvnBx.png)
 
+Base functionality will be largely the same for mobile. My thought would be that search would be above the team section in a long, scrolling page. Perhaps a pair of buttons which stay fixed but only appear when the screen is narrow enough to auto-navigate to either section. They are presented as two separate pages in the wireframes above because I'm not really sure how to go about wireframing a long scroll like that.
+
 ### MVP/PostMVP
 
 #### MVP 
@@ -140,6 +144,7 @@ List of features:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
+| Craft Specification | H | 3hrs|  |  |
 | Search for Characters | H | 2hrs|  |  |
 | Dropdown Menu | H | 2hrs |  |  |
 | Team Area | M | 2hrs |  |  |
@@ -155,7 +160,7 @@ List of features:
 | CSS De-bugging | H | 3hrs |  |  |
 | Style Choices | L | 3hrs |  |  |
 | Keep ReadMe updated | H | 3hrs |  |  |
-| Total | H | 39hrs |  |  |
+| Total | H | 42hrs |  |  |
 
 ## Code Snippet
 
