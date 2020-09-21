@@ -134,7 +134,7 @@ Base functionality will be largely the same for mobile. My thought would be that
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Craft Specification | M | 2hrs| 1hr15m |  |
-| Barebones HTML | H | 15m| 15m | 15m |
+| Barebones HTML | H | 15m| 30m | 30m |
 | Pseudocode Project | H | 3hrs| 2hr |  |
 | Search for Characters | H | 2hrs|  |  |
 | Dropdown Menu | M | 2hrs |  |  |

@@ -5,5 +5,5 @@ const privateKey = config.SECRET_KEY
 
 // example: http://gateway.marvel.com/v1/public/characters?name=${name}&ts=${ts}&apikey=${key}&hash=${hash}
 
-let button = document.querySelector("button")
-button.addEventListener('click', button.remove)
+// let button = document.querySelector("button")
+// button.addEventListener('click', button.remove)

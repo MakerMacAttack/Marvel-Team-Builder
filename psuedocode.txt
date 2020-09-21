@@ -17,7 +17,7 @@ function async populateDropDown () {
     const option = newElement('option')
     option.value = list[j]
     if (j === randomSelect) {
-      make the option selected
+      option.selected = true
     }
     select.append(option)
   }
