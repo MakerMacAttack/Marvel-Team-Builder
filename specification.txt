@@ -30,7 +30,7 @@ Five sections within a flowbox displayed in a column. The leader class will be g
 
 Declare initial constants. Get the keys from the config file, get the base url and endpoint.
 
-Grab a few elements you'll eventually need. The image, name, and additional info for char-display. 
+Grab a few elements you'll eventually need. The image, name, and additional info for char-display. From the input, the drop-down menu, the text input, and the submit button.
 
 ## Functions
 

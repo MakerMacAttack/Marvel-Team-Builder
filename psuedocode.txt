@@ -6,6 +6,9 @@ endpoint = "char endpoint"
 const face = grab face element
 const name = grab name element
 const addl = grab additional info box
+const submit = grab submit button
+const text = text input
+const dropdown = dropdown input
 
 function async populateDropDown () {
   try {
@@ -27,6 +30,8 @@ function async populateDropDown () {
     option.value = "Dropdown list unavailable, blame MODOK"
   }
 }
+
+Call the function to actually populate the dropdown
 
 function async getChar (char) {
   try {
@@ -120,9 +125,6 @@ function newInfo(char) {
   })
 }  
 
-const submit = grab submit button
-const text = text input
-const dropdown = dropdown input
 submit.addEvent ('click', () => {
   if (text.value) {
     addChar(getChar(text.value))
