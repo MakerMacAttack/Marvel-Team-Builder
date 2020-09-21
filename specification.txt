@@ -1,0 +1,47 @@
+#### HTML
+
+## Character information box.
+
+A box to display the character information. This should have a distinct background and a minimum size even while empty. It will contain an img for the current character profile, a button which will add the current character to the team if there is room, a button which will display additional information, and a section for additional information.
+
+## Input section
+
+The input section, which will have a dropdown list of every marvel character, populated by the API. Also a box for text input. Also a button which will check the api for any value in the textbox, unless there is none in which case it will default to the value of the dropdown. This would be a good place for some basic instructions. Yes, you can add the same character twice. This is comic books.
+
+## Team section
+
+The team section, which will contain five other sections. Each other section will display a character's picture and name. Each section will have a button which will remove the current character from the team. Anyone who isn't a team leader will have a button which makes them the leader.
+
+#### CSS
+
+## Character Information Box.
+
+Character image will be in the upper left. Team button will be directly below that, and 'more info' button will be to the right of that. More information will display to the right of the character image. If the team is full, the team button will be non-functional with a visual cue.
+
+## Input section
+
+A dropdown menu to the left and a textbox to the right. The submit button will be centered under them. :hover sections will be used to make the button pop.
+
+## Team section
+
+Five sections within a flowbox displayed in a column. The leader class will be given an order of zero to move them to the top. Brainstorm more ways to make the leader special. Each section will have the character's image centered, with the name centered below the image.
+
+#### JS
+
+Declare initial constants. Get the keys from the config file, get the base url and endpoint.
+
+## Functions
+
+Populate the dropdown. No paramater. Generates a TS. Uses that to make a hash. Makes a request to the API for the list of all character names. Iterates over that list to create options and append them to the dropdown menu. Randomizes the starting location of the dropdown menu. In the event of failure it appends a single option saying please use text field. If possible, it changes the Submit button to only look at the text.
+
+Get the character object. Asyncronous. It takes a name as a parameter. It gets a timestamp, creates a hash, and uses both to make the request. It returns the character object.
+
+Clear info box. No parameters. It checks if there is any info in the character information box and removes it all.
+
+Clear team member. No parameters. Checks if there are currently five team members. If so, it enables the current Join button, if it exists. Removes the div it is a part of from the team list.
+
+Make team leader. Takes no parameters. Checks if there is a team leader, and if so, removes the Leader class from that person. Regardless, adds the leader class to the div it is a part of.
+
+More Info addition. Takes an object as a parameter. Adds more information. What specifically it adds will be determined later.
+
+Append character to info box. It takes a character object as a parameter. First it runs the function to clear the info box. Then it adds the current object's img to the profile pic. Then it adds the current object's name. Then it creates a Join Team button. If there are five members of the team, it starts disabled. Then it creates a More Info button.
