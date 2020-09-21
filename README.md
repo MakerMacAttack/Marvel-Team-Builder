@@ -133,7 +133,7 @@ Base functionality will be largely the same for mobile. My thought would be that
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Craft Specification | M | 2hrs| 1hr |  |
+| Craft Specification | M | 2hrs| 1hr15m |  |
 | Pseudocode Project | H | 3hrs|  |  |
 | Search for Characters | H | 2hrs|  |  |
 | Dropdown Menu | M | 2hrs |  |  |

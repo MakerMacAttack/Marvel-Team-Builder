@@ -38,10 +38,24 @@ Get the character object. Asyncronous. It takes a name as a parameter. It gets a
 
 Clear info box. No parameters. It checks if there is any info in the character information box and removes it all.
 
-Clear team member. No parameters. Checks if there are currently five team members. If so, it enables the current Join button, if it exists. Removes the div it is a part of from the team list.
+Clear team member. Takes a div as a parameter. Checks if there are currently five team members. If so, it enables the current Join button, if it exists. Removes the div from the team list.
 
-Make team leader. Takes no parameters. Checks if there is a team leader, and if so, removes the Leader class from that person. Regardless, adds the leader class to the div it is a part of.
+Make team leader. Takes a div as a parameter. Checks if a team leader exists, and if so, removes the Leader class from that person. Regardless, adds the leader class to the div of the argument.
 
 More Info addition. Takes an object as a parameter. Adds more information. What specifically it adds will be determined later.
 
 Append character to info box. It takes a character object as a parameter. First it runs the function to clear the info box. Then it adds the current object's img to the profile pic. Then it adds the current object's name. Then it creates a Join Team button. If there are five members of the team, it starts disabled. Then it creates a More Info button.
+
+Add to team. Takes an object. Creates a team-class div using the profile image and photo of the object. Creates Remove and Make Leader buttons.
+
+## Listener Events
+
+Submit name. If the text box has a value, grabs the value. If it does not, checks the dropdown. If the value of the dropdown is "Dropdown not working" it alerts the user to enter a name before clicking sumbit. Otherwise it takes the value from the dropdown. Then it gets the character objects from the value, and appends character to info box.
+
+Add to team. Calls the 'add to team' function, passing it the object as a parameter.
+
+More info. Calls the More Info function, passing the object as a parameter.
+
+Remove. Runs the Clear Team Member function, with its own div as the parameter.
+
+Make leader. Runs the Make Leader function with the div it's a part of as the argument.
