@@ -30,6 +30,8 @@ Five sections within a flowbox displayed in a column. The leader class will be g
 
 Declare initial constants. Get the keys from the config file, get the base url and endpoint.
 
+Grab a few elements you'll eventually need. The image, name, and additional info for char-display. 
+
 ## Functions
 
 Populate the dropdown. Asynchronous. No paramater. Generates a TS. Uses that to make a hash. Makes a request to the API for the list of all character names. Iterates over that list to create options and append them to the dropdown menu. Randomizes the starting location of the dropdown menu. In the event of failure it appends a single option saying please use text field. If possible, it changes the Submit button to only look at the text.
@@ -40,9 +42,11 @@ Clear info box. No parameters. It checks if there is any info in the character i
 
 Clear team member. Takes a div as a parameter. Checks if there are currently five team members. If so, it enables the current Join button, if it exists. Removes the div from the team list.
 
-Make team leader. Takes a div as a parameter. Checks if a team leader exists, and if so, removes the Leader class from that person. Regardless, adds the leader class to the div of the argument.
+Make team leader. Takes a div as a parameter. Checks if a team leader exists, and if so, removes the Leader id from that person. Regardless, adds the leader id to the div of the argument.
 
 More Info addition. Takes an object as a parameter. Adds more information. What specifically it adds will be determined later.
+
+Create add button. Takes a character as an input. Creates image and name objects, puts them in a new div, and appends the div to Team.
 
 Append character to info box. It takes a character object as a parameter. First it runs the function to clear the info box. Then it adds the current object's img to the profile pic. Then it adds the current object's name. Then it creates a Join Team button. If there are five members of the team, it starts disabled. Then it creates a More Info button.
 
@@ -52,7 +56,7 @@ Add to team. Takes an object. Creates a team-class div using the profile image a
 
 Submit name. If the text box has a value, grabs the value. If it does not, checks the dropdown. If the value of the dropdown is "Dropdown not working" it alerts the user to enter a name before clicking sumbit. Otherwise it takes the value from the dropdown. Then it gets the character objects from the value, and appends character to info box.
 
-Add to team. Calls the 'add to team' function, passing it the object as a parameter.
+Add to team. Calls the 'add to team' function, passing it the object as a parameter. Disabled if made while there are 5 team members.
 
 More info. Calls the More Info function, passing the object as a parameter.
 

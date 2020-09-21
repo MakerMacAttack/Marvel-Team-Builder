@@ -118,7 +118,7 @@ Base functionality will be largely the same for mobile. My thought would be that
 |---|---| ---|
 |Sept 18-21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Sept 21| Project Approval | Complete
-|Sept 21| Specification, Psuedocode | Incomplete
+|Sept 21| Specification, Psuedocode | Complete
 |Sept 22| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Sept 22| MVP | Incomplete
 |Sept 23| Basic Styling | Incomplete
@@ -135,7 +135,7 @@ Base functionality will be largely the same for mobile. My thought would be that
 | --- | :---: |  :---: | :---: | :---: |
 | Craft Specification | M | 2hrs| 1hr15m |  |
 | Barebones HTML | H | 15m| 15m | 15m |
-| Pseudocode Project | H | 3hrs|  |  |
+| Pseudocode Project | H | 3hrs| 2hr |  |
 | Search for Characters | H | 2hrs|  |  |
 | Dropdown Menu | M | 2hrs |  |  |
 | Team Area | M | 2hrs |  |  |

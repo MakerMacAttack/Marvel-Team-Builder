@@ -3,14 +3,22 @@ const privateKey = config.privateKey
 baseURL = "marve gateway url"
 endpoint = "char endpoint"
 
+const face = grab face element
+const name = grab name element
+const addl = grab additional info box
+
 function async populateDropDown () {
   try {
   const ts = get timestamp
   const hash = md5(ts + publicKey + privateKey) // double check this order
   const list = await axios.get(baseURL + endpoint + ts + publicKey + hash)
+  let randomSelect = randomize a number within the array
   for (iterate over list) {
     const option = newElement('option')
     option.value = list[j]
+    if (j === randomSelect) {
+      make the option selected
+    }
     select.append(option)
   }
   } catch (error) {
@@ -32,21 +40,96 @@ function async getChar (char) {
 }
 
 function clearInfo () {
-  while (anything in char-display) {
-    char-display.lastChild.remove()
+  while (anything in face) {
+    face.lastChild.remove()
+  }
+  name.innerText = ''
+  while (anything in addl) {
+    addl.lastChild.remove()
   }
 }
 
 function removeTeamMember (div) {
-  div.remove() // This may not warrant a separate function
+  if (five team members) {
+    enable 'add to team' button
+    // In theory it should not be possible for there not to be an add-to-team button.
+    // Also in theory if we're in this state that button should be disabled.
+  }
+  div.remove()
 }
 
+function makeLeader (div) {
+  if (id 'leader' exists) {
+    whoever is leader.id = ''
+  }
+  div.id = 'leader'
+}
+
+function moreInfo (char) {
+  Okay this is a placeholder for now.
+  Basically it's going to get more information from the object.
+  And then put that information into HTML elements.
+  And then append those elements within the char-display.
+}
+
+addChar (char) {
+  profile = char.profile
+  name = char.name
+  image = createImg
+  identity = createP
+  image.src = profile
+  identity.innerText = name
+  display = create div
+  display.class = team-member
+  display.append(image)
+  display.append(identity)
+  team.append(display)
+  //make remove button
+  const remove = create('button')
+  remove.addListener('click', () => {
+    removeTeamMember(display)
+  })
+  make leader button
+  const leader = create('button')
+  leader.addEvent('click', () => {
+    makeLeader(display)
+  })
+}
+
+function newInfo(char) {
+  clearInfo()
   const profile = char.profile
-    name = char.name
-    image = create
-    image.src = profile
-    display = create p
-    display.value = name
-    make add button
-    make more button
-  
+  name = char.name
+  image = create
+  image.src = profile
+  display = create p
+  display.value = name
+  face.append(image)
+  // make add button
+  const add = create'button'
+  add.addEvent('click', () => {
+    addChar(char)
+  })
+  if (five team members) {
+    add.class = 'disabled'
+  }
+  //make more button(char)
+  const more = create('button')
+  more.addEvent('click', () => {
+    moreInfo(char)
+  })
+}  
+
+const submit = grab submit button
+const text = text input
+const dropdown = dropdown input
+submit.addEvent ('click', () => {
+  if (text.value) {
+    addChar(getChar(text.value))
+  } else if (dropdown.value === "doesn't work") {
+    alert("Please type a character's name into the text box)
+  } else {
+    addChar(getChar(dropdown.value))
+  }
+  }
+})
