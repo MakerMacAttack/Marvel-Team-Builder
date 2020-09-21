@@ -154,15 +154,7 @@ Base functionality will be largely the same for mobile. My thought would be that
 
 ## Code Snippet
 
-I was kind of proud that I was able to use the documentation to figure out exactly what they wanted as a hash, and then learned how to construct it.
-
-Not 100% positive how I go about giving credit to the YouTuber who showed me how to set up the encryption <script> in my HTML and the md5() function. Want to make sure it's not considered plaigirism.
-
-```
-	let ts = new Date().getTime()
-	let hash = md5(ts + private + public) 
-	const char = await axios.get(`${base}${endpoint}${name}&ts=${ts}&apikey=${apikey}&hash=${hash}`)
-```
+TBA
 
 ## Change Log
  Use this section to document what changes were made and the reasoning behind those changes.  
