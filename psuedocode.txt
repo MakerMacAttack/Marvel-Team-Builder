@@ -1,0 +1,52 @@
+const publicKey = config.publicKey
+const privateKey = config.privateKey
+baseURL = "marve gateway url"
+endpoint = "char endpoint"
+
+function async populateDropDown () {
+  try {
+  const ts = get timestamp
+  const hash = md5(ts + publicKey + privateKey) // double check this order
+  const list = await axios.get(baseURL + endpoint + ts + publicKey + hash)
+  for (iterate over list) {
+    const option = newElement('option')
+    option.value = list[j]
+    select.append(option)
+  }
+  } catch (error) {
+    oh no error
+    const option = newElement('option')
+    option.value = "Dropdown list unavailable, blame MODOK"
+  }
+}
+
+function async getChar (char) {
+  try {
+    ts
+    hash
+    const char = axios thing ${char} .data.data.result
+    return char
+    } catch (error) {
+    "Call failed, try again. Hail Hydra."
+  }
+}
+
+function clearInfo () {
+  while (anything in char-display) {
+    char-display.lastChild.remove()
+  }
+}
+
+function removeTeamMember (div) {
+  div.remove() // This may not warrant a separate function
+}
+
+  const profile = char.profile
+    name = char.name
+    image = create
+    image.src = profile
+    display = create p
+    display.value = name
+    make add button
+    make more button
+  

@@ -32,7 +32,7 @@ Declare initial constants. Get the keys from the config file, get the base url a
 
 ## Functions
 
-Populate the dropdown. No paramater. Generates a TS. Uses that to make a hash. Makes a request to the API for the list of all character names. Iterates over that list to create options and append them to the dropdown menu. Randomizes the starting location of the dropdown menu. In the event of failure it appends a single option saying please use text field. If possible, it changes the Submit button to only look at the text.
+Populate the dropdown. Asynchronous. No paramater. Generates a TS. Uses that to make a hash. Makes a request to the API for the list of all character names. Iterates over that list to create options and append them to the dropdown menu. Randomizes the starting location of the dropdown menu. In the event of failure it appends a single option saying please use text field. If possible, it changes the Submit button to only look at the text.
 
 Get the character object. Asyncronous. It takes a name as a parameter. It gets a timestamp, creates a hash, and uses both to make the request. It returns the character object.
 

@@ -134,6 +134,7 @@ Base functionality will be largely the same for mobile. My thought would be that
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Craft Specification | M | 2hrs| 1hr15m |  |
+| Barebones HTML | H | 15m| 15m | 15m |
 | Pseudocode Project | H | 3hrs|  |  |
 | Search for Characters | H | 2hrs|  |  |
 | Dropdown Menu | M | 2hrs |  |  |
@@ -150,7 +151,7 @@ Base functionality will be largely the same for mobile. My thought would be that
 | CSS De-bugging | M | 3hrs |  |  |
 | Style Choices | L | 3hrs |  |  |
 | Keep ReadMe updated | M | 3hrs |  |  |
-| Total | H | 44hrs |  |  |
+| Total | H | 44hrs15m |  |  |
 
 ## Code Snippet
 
