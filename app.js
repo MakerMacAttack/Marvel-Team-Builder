@@ -8,6 +8,7 @@ const privateKey = config.SECRET_KEY
 const face = document.querySelector('#face')
 const name = document.querySelector('#name')
 const addl = document.querySelector('#addl')
+const char_display = document.querySelector('#char-display')
 // const dropdown = document.querySelector('#dropdown')
 const submit = document.querySelector('#submit')
 const user_input = document.querySelector('#user-input')
@@ -53,7 +54,7 @@ async function getChar(name) {
     const response = await axios.get(`${base}${endpoint}${name}&limit=1&ts=${ts}&apikey=${apikey}&hash=${hash}`)
     const char = response.data.data.results[0]
     // console.log(char.thumbnail.path)
-    return char
+    newInfo(char)
   } catch (error) {
     console.log(`Error: ${error}`)
     alert("Failure. Try again. Hail Hydra")
@@ -70,6 +71,14 @@ function clearInfo() {
   name.innerText = ''
   while (addl.lastChild) {
     addl.lastChild.remove()
+  }
+  let addMinus = document.querySelector('#add')
+  if (addMinus) {
+    addMinus.remove()
+  }
+  let moreMinus = document.querySelector('#more')
+  if (moreMinus) {
+    moreMinus.remove()
   }
 }
 
@@ -95,7 +104,7 @@ function moreInfo() {
 
 function addChar(char) {
   let image = document.createElement('img')
-  console.log(char)
+  // console.log(char)
   let src = (char.thumbnail.path + "." + char.thumbnail.extension)
   image.src = src
   let name = char.name
@@ -106,14 +115,14 @@ function addChar(char) {
   display.append(image)
   display.append(identity)
   team.append(display)
-  const remove = createElement('button')
+  const remove = document.createElement('button')
   remove.innerText = "Remove"
   remove.class = "remove"
   remove.addEventListener('click', () => {
     removeTeamMember(display)
   })
-  const leader = createElement('button')
-  leader.innerText("Make Leader")
+  const leader = document.createElement('button')
+  leader.innerText = "Make Leader"
   leader.class = "make-leader"
   leader.addEventListener('click', () => {
     makeLeader(display)
@@ -130,6 +139,7 @@ function newInfo(char) {
   name.innerText = char.name
   face.append(image)
   const add = document.createElement('button')
+  add.id = "add"
   add.innerText = "Add to Team"
   add.addEventListener('click', () => {
     addChar(char)
@@ -140,12 +150,16 @@ function newInfo(char) {
   }
   add.classList.add("add")
   const more = document.createElement('button')
+  more.id = "more"
+  more.innerText = "More info"
   more.classList.add("more")
   more.addEventListener('click', () => {
     moreInfo(char)
   })
+  char_display.append(add)
+  char_display.append(more)
 }
 
 submit.addEventListener('click', () => {
-  addChar(getChar(user_input.value))
+  getChar(user_input.value)
 })

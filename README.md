@@ -147,7 +147,7 @@ Base functionality will be largely the same for mobile. My thought would be that
 | Reduce Appearance Array | l | 3hrs |  |  |
 | Advanced CSS | M | 3hrs |  |  |
 | Wrestle with CSS more | L | 3hrs |  |  |
-| Panic and fix unexpected issues | M | 3hrs |  |  |
+| Panic and fix unexpected issues | M | 3hrs | 30m |  |
 | CSS De-bugging | M | 3hrs |  |  |
 | Style Choices | L | 3hrs |  |  |
 | Keep ReadMe updated | M | 3hrs |  |  |
