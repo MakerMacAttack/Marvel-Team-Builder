@@ -8,7 +8,7 @@ const privateKey = config.SECRET_KEY
 const face = document.querySelector('#face')
 const name = document.querySelector('#name')
 const addl = document.querySelector('#addl')
-const char_display = document.querySelector('#char-display')
+const button_house = document.querySelector('#button-house')
 // const dropdown = document.querySelector('#dropdown')
 const submit = document.querySelector('#submit')
 const user_input = document.querySelector('#user-input')
@@ -54,6 +54,7 @@ async function getChar(name) {
     const response = await axios.get(`${base}${endpoint}${name}&limit=1&ts=${ts}&apikey=${apikey}&hash=${hash}`)
     const char = response.data.data.results[0]
     // console.log(char.thumbnail.path)
+    console.log(char)
     newInfo(char)
   } catch (error) {
     console.log(`Error: ${error}`)
@@ -61,8 +62,6 @@ async function getChar(name) {
     return
   }
 }
-
-// getChar("haw")
 
 function clearInfo() {
   while (face.lastChild) {
@@ -90,11 +89,6 @@ function checkAddFalse() {
 
 function removeTeamMember(div) {
   checkAddFalse()
-  // const team = document.querySelectorAll("#team div")
-  // if (team.length === 5) {
-  //   const add = document.querySelector('#add')
-  //   add.disabled = false
-  // }
   div.remove()
 }
 
@@ -110,7 +104,7 @@ function makeLeader(div) {
   leader_button.disabled = true
 }
 
-function moreInfo() {
+function moreInfo(char) {
   //I will come up with something for this.
 }
 
@@ -166,20 +160,23 @@ function newInfo(char) {
     addChar(char)
   })
   checkAdd()
-  // let team = document.querySelectorAll("#team div")
-  // if (team.length === 5) {
-  //   add.disabled = true
-  // }
   const more = document.createElement('button')
   more.id = "more"
   more.innerText = "More info"
   more.addEventListener('click', () => {
     moreInfo(char)
   })
-  char_display.append(add)
-  char_display.append(more)
+  button_house.append(add)
+  button_house.append(more)
 }
 
 submit.addEventListener('click', () => {
   getChar(user_input.value)
+})
+
+user_input.addEventListener("keyup", (e) => {
+  e.preventDefault()
+  if (e.key === "Enter") {
+    getChar(user_input.value)
+  }
 })

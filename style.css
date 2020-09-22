@@ -17,18 +17,45 @@ img {
 }
 
 #right {
-  display: flex;
-  margin-right: 0;
+  margin-left: auto;
 }
 
 #title {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   background: royalblue;
+  margin: 5px;
+  padding: 5px;
+}
+
+#char-display {
+  background: green;
+  min-height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+#first {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
 }
 
 #name {
   background: red;
+}
+
+#button-house {
+  display: flex;
+  flex-direction: row;
+}
+
+#addl {
+  background: purple;
+  min-width: 30px;
+  min-height: 30px;
+  margin: 0 auto;
+  position: absolute;
 }
 
 #input {
@@ -39,12 +66,13 @@ img {
 
 #team {
   max-width: 310px;
-  min-width: 100px;
+  min-width: 300px;
+  min-height: 1000px;
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
-  min-width: 300px;
   background: blue;
+  margin: 5px;
+  padding: 5px;
 }
 
 #leader {
