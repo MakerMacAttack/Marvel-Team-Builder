@@ -136,8 +136,8 @@ Base functionality will be largely the same for mobile. My thought would be that
 | Craft Specification | M | 2hrs| 1hr15m |  |
 | Barebones HTML | H | 15m| 30m | 30m |
 | Pseudocode Project | H | 3hrs| 2hr |  |
-| Search for Characters | H | 2hrs|  |  |
-| Dropdown Menu | M | 2hrs | 1hr |  |
+| Search for Characters | H | 2hrs| 1hr15m |  |
+| Dropdown Menu | M | 2hrs | 1hr15m | 1h15m |
 | Team Area | M | 2hrs |  |  |
 | Basic Team Functionality | L | 3hrs |  |  |
 | Advanced Team Functionality | L | 3hrs |  |  |
@@ -158,4 +158,5 @@ Base functionality will be largely the same for mobile. My thought would be that
 TBA
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ 
+ Confirming that they will not provide more than 100 query results at once, meaning I cannot populate the dropdown, so that idea is sunk. 

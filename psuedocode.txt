@@ -89,16 +89,20 @@ addChar (char) {
   display.append(image)
   display.append(identity)
   team.append(display)
-  //make remove button
+  // make remove button
   const remove = create('button')
+  make button say 'remove'
   remove.addListener('click', () => {
     removeTeamMember(display)
   })
-  make leader button
+  // make leader button
   const leader = create('button')
+  make button say "make leader"
   leader.addEvent('click', () => {
     makeLeader(display)
   })
+  display append leader button
+  display append remove button
 }
 
 function newInfo(char) {
