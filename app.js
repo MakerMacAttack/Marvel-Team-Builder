@@ -82,24 +82,44 @@ function clearInfo() {
   }
 }
 
+function checkAddFalse() {
+  const add = document.querySelector('#add')
+  add.disabled = false
+
+}
+
 function removeTeamMember(div) {
-  const team = document.querySelectorAll("#team div")
-  if (team.length === 5) {
-    //enable add-to-team button
-  }
+  checkAddFalse()
+  // const team = document.querySelectorAll("#team div")
+  // if (team.length === 5) {
+  //   const add = document.querySelector('#add')
+  //   add.disabled = false
+  // }
   div.remove()
 }
 
 function makeLeader(div) {
-  leader = document.querySelector("#leader")
+  let leader = document.querySelector("#leader")
   if (leader) {
-    leader.id = ''
+    let make_leader = document.querySelector('#leader .make-leader')
+    make_leader.disabled = false
+    leader.removeAttribute('id')
   }
   div.id = 'leader'
+  let leader_button = div.querySelector(".make-leader")
+  leader_button.disabled = true
 }
 
 function moreInfo() {
   //I will come up with something for this.
+}
+
+function checkAdd() {
+  let team = document.querySelectorAll("#team div")
+  if (team.length === 5) {
+    const add = document.querySelector('#add')
+    add.disabled = true
+  }
 }
 
 function addChar(char) {
@@ -110,24 +130,25 @@ function addChar(char) {
   let name = char.name
   let identity = document.createElement('p')
   identity.innerText = name
-  display = document.createElement('div')
+  let display = document.createElement('div')
   display.class = "team-member"
   display.append(image)
   display.append(identity)
   team.append(display)
+  checkAdd()
   const remove = document.createElement('button')
   remove.innerText = "Remove"
   remove.class = "remove"
+  display.append(remove)
   remove.addEventListener('click', () => {
-    removeTeamMember(display)
+    removeTeamMember(display) // Need to make this it's parent div
   })
   const leader = document.createElement('button')
   leader.innerText = "Make Leader"
-  leader.class = "make-leader"
+  leader.className = "make-leader"
   leader.addEventListener('click', () => {
     makeLeader(display)
   })
-  display.append(remove)
   display.append(leader)
 }
 
@@ -144,15 +165,14 @@ function newInfo(char) {
   add.addEventListener('click', () => {
     addChar(char)
   })
-  let team = document.querySelectorAll("#team div")
-  if (team.length === 5) {
-    add.classList.add("disable")
-  }
-  add.classList.add("add")
+  checkAdd()
+  // let team = document.querySelectorAll("#team div")
+  // if (team.length === 5) {
+  //   add.disabled = true
+  // }
   const more = document.createElement('button')
   more.id = "more"
   more.innerText = "More info"
-  more.classList.add("more")
   more.addEventListener('click', () => {
     moreInfo(char)
   })

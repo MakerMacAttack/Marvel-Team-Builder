@@ -1,3 +1,52 @@
+body {
+  background-image: url(gallery/background.jpg);
+}
+
 img {
   max-width: 300px;
+}
+
+#total {
+  display: flex;
+  flex-direction: row;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+}
+
+#right {
+  display: flex;
+  margin-right: 0;
+}
+
+#title {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  background: royalblue;
+}
+
+#name {
+  background: red;
+}
+
+#input {
+  background: yellow;
+  padding: 5px;
+  margin: 5px;
+}
+
+#team {
+  max-width: 310px;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  min-width: 300px;
+  background: blue;
+}
+
+#leader {
+  order: -1;
 }
