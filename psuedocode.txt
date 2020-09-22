@@ -52,6 +52,8 @@ function clearInfo () {
   while (anything in addl) {
     addl.lastChild.remove()
   }
+  while ul has children
+    remove child
 }
 
 function removeTeamMember (div) {
@@ -71,10 +73,13 @@ function makeLeader (div) {
 }
 
 function moreInfo (char) {
-  Okay this is a placeholder for now.
-  Basically it's going to get more information from the object.
-  And then put that information into HTML elements.
-  And then append those elements within the char-display.
+  timestamp
+  hash
+  get events by id
+  iterate over list
+    create li
+    append li to ul
+  disable more button
 }
 
 addChar (char) {

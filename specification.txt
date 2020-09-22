@@ -44,7 +44,7 @@ Clear team member. Takes a div as a parameter. Checks if there are currently fiv
 
 Make team leader. Takes a div as a parameter. Checks if a team leader exists, and if so, removes the Leader id from that person. Regardless, adds the leader id to the div of the argument.
 
-More Info addition. Takes an object as a parameter. Adds more information. What specifically it adds will be determined later.
+More Info addition. Takes a char as a parameter. Makes a new call on that ID for the Events that character has been a part of. Bonus points: Also the comics they've been in, reduced. Let's see what that looks like. Then disable 'more' button.
 
 Create add button. Takes a character as an input. Creates image and name objects, puts them in a new div, and appends the div to Team.
 

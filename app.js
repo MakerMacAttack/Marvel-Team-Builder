@@ -8,7 +8,8 @@ const privateKey = config.SECRET_KEY
 const face = document.querySelector('#face')
 const name = document.querySelector('#name')
 const addl = document.querySelector('#addl')
-const button_house = document.querySelector('#button-house')
+const buttonhaus = document.querySelector('#buttonhaus')
+const events = document.querySelector('#events')
 // const dropdown = document.querySelector('#dropdown')
 const submit = document.querySelector('#submit')
 const user_input = document.querySelector('#user-input')
@@ -48,13 +49,13 @@ const user_input = document.querySelector('#user-input')
 
 async function getChar(name) {
   try {
+    user_input.value = ''
     const ts = new Date().getTime()
     const hash = md5(ts + privateKey + apikey)
     //     // Learned how to use md5 from a YouTuber named Junior Developer Central
     const response = await axios.get(`${base}${endpoint}${name}&limit=1&ts=${ts}&apikey=${apikey}&hash=${hash}`)
     const char = response.data.data.results[0]
     // console.log(char.thumbnail.path)
-    console.log(char)
     newInfo(char)
   } catch (error) {
     console.log(`Error: ${error}`)
@@ -68,9 +69,6 @@ function clearInfo() {
     face.lastChild.remove()
   }
   name.innerText = ''
-  while (addl.lastChild) {
-    addl.lastChild.remove()
-  }
   let addMinus = document.querySelector('#add')
   if (addMinus) {
     addMinus.remove()
@@ -79,6 +77,13 @@ function clearInfo() {
   if (moreMinus) {
     moreMinus.remove()
   }
+  while (events.lastChild) {
+    events.lastChild.remove()
+  }
+  const labels = document.querySelectorAll(".label")
+  labels.forEach(label => {
+    label.remove()
+  });
 }
 
 function checkAddFalse() {
@@ -104,8 +109,22 @@ function makeLeader(div) {
   leader_button.disabled = true
 }
 
-function moreInfo(char) {
-  //I will come up with something for this.
+async function moreInfo(char, more) {
+  const ts = new Date().getTime()
+  const hash = md5(ts + privateKey + apikey)
+  const response = await axios.get(`${base}/v1/public/characters/${char.id}/events?limit=100&ts=${ts}&apikey=${apikey}&hash=${hash}`)
+  const eventList = response.data.data.results
+  const eventLabel = document.createElement('p')
+  eventLabel.className = "label"
+  eventLabel.innerText = "Events:"
+  addl.prepend(eventLabel)
+  eventList.forEach(element => {
+    console.log(element.title)
+    const eventItem = document.createElement('li')
+    eventItem.innerText = element.title
+    events.append(eventItem)
+  });
+  more.disabled = true
 }
 
 function checkAdd() {
@@ -118,7 +137,6 @@ function checkAdd() {
 
 function addChar(char) {
   let image = document.createElement('img')
-  // console.log(char)
   let src = (char.thumbnail.path + "." + char.thumbnail.extension)
   image.src = src
   let name = char.name
@@ -135,7 +153,7 @@ function addChar(char) {
   remove.class = "remove"
   display.append(remove)
   remove.addEventListener('click', () => {
-    removeTeamMember(display) // Need to make this it's parent div
+    removeTeamMember(display)
   })
   const leader = document.createElement('button')
   leader.innerText = "Make Leader"
@@ -164,19 +182,13 @@ function newInfo(char) {
   more.id = "more"
   more.innerText = "More info"
   more.addEventListener('click', () => {
-    moreInfo(char)
+    moreInfo(char, more)
   })
-  button_house.append(add)
-  button_house.append(more)
+  buttonhaus.append(add)
+  buttonhaus.append(more)
 }
 
-submit.addEventListener('click', () => {
-  getChar(user_input.value)
-})
-
-user_input.addEventListener("keyup", (e) => {
+submit.addEventListener('submit', (e) => {
   e.preventDefault()
-  if (e.key === "Enter") {
-    getChar(user_input.value)
-  }
+  getChar(user_input.value)
 })

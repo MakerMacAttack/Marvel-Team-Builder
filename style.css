@@ -52,10 +52,9 @@ img {
 
 #addl {
   background: purple;
-  min-width: 30px;
-  min-height: 30px;
-  margin: 0 auto;
-  position: absolute;
+  min-width: 200px;
+  min-height: 200px;
+  margin: 10px;
 }
 
 #input {
