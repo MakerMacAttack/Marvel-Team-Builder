@@ -56,10 +56,12 @@ button:disabled:hover {
 }
 
 #char-display {
-  background: rgba(80, 74, 74, .8);
+  background: rgba(160, 96, 172, .8);
   min-height: 300px;
   display: flex;
   flex-direction: row;
+  color: #030303;
+  /* Hawkeye color palette courtesy of https://www.color-hex.com/color-palette/11367 */
 }
 
 #first {
@@ -69,7 +71,9 @@ button:disabled:hover {
 }
 
 #name {
-  background: rgba(81, 140, 202, .8);
+  background: rgba(101, 106, 109, .8);
+  padding: 5px;
+  display: none;
 }
 
 #button-house {
@@ -78,10 +82,11 @@ button:disabled:hover {
 }
 
 #addl {
-  background: rgba(247, 143, 63, .8);
+  background: rgba(95, 104, 171, .8);
   min-width: 200px;
   min-height: 200px;
   margin: 10px;
+  padding: 10px;
   display: none;
 }
 

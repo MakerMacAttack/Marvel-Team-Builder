@@ -165,6 +165,7 @@ function addChar(char, add) {
 function newInfo(char) {
   clearInfo()
   addl.style.display = "block"
+  name.style.display = "block"
   let image = document.createElement('img')
   let src = char.thumbnail.path + "." + char.thumbnail.extension
   image.src = src
