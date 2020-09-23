@@ -55,7 +55,7 @@ async function getChar(name) {
     //     // Learned how to use md5 from a YouTuber named Junior Developer Central
     const response = await axios.get(`${base}${endpoint}${name}&limit=1&ts=${ts}&apikey=${apikey}&hash=${hash}`)
     const char = response.data.data.results[0]
-    // console.log(char.thumbnail.path)
+    console.log(char.id)
     newInfo(char)
   } catch (error) {
     console.log(`Error: ${error}`)
@@ -119,7 +119,6 @@ async function moreInfo(char, more) {
   eventLabel.innerText = "Events:"
   addl.prepend(eventLabel)
   eventList.forEach(element => {
-    console.log(element.title)
     const eventItem = document.createElement('li')
     eventItem.innerText = element.title
     events.append(eventItem)
