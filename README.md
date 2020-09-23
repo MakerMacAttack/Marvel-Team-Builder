@@ -145,12 +145,12 @@ Base functionality will be largely the same for mobile. My thought would be that
 | Comic Appearances | L | 2hrs | 30m | 30m |
 | Responsiveness | H | 3hrs |  |  |
 | Reduce Appearance Array | l | 3hrs | - | - |
-| Advanced CSS | M | 3hrs |  |  |
-| Wrestle with CSS more | L | 3hrs |  |  |
+| Advanced CSS | M | 3hrs | 3hr |  |
+| Wrestle with CSS more | L | 3hrs | 2hr |  |
 | Panic and fix unexpected issues | M | 3hrs | 2hr30m |  |
-| CSS De-bugging | M | 3hrs | 1hr |  |
-| Style Choices | L | 3hrs |  |  |
-| Keep ReadMe updated | M | 3hrs |  |  |
+| CSS De-bugging | M | 3hrs | 2hr |  |
+| Style Choices | L | 3hrs | 2hr |  |
+| Keep ReadMe updated | M | 3hrs | 1hr30m |  |
 | Total | H | 44hrs15m |  |  |
 
 ## Code Snippet

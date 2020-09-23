@@ -141,7 +141,7 @@ function addChar(char, add) {
   let identity = document.createElement('p')
   identity.innerText = name
   let display = document.createElement('div')
-  display.class = "team-member"
+  display.className = "team-member"
   display.append(image)
   display.append(identity)
   team.append(display)
