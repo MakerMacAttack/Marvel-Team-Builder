@@ -1,5 +1,11 @@
+/* Marvel color palette courtesy of color-hex.com/color-palette/6563 */
+
 body {
   background-image: url(gallery/background.jpg);
+}
+
+div {
+  border-radius: 25px;
 }
 
 img {
@@ -16,20 +22,18 @@ img {
   flex-direction: column;
 }
 
-#right {
-  margin-left: auto;
-}
-
 #title {
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  background: royalblue;
+  -webkit-text-stroke-color: #f0f0f0;
+  text: #002d5c;
+  background: rgba(135, 0, 0, 0.8);
   margin: 5px;
   padding: 5px;
+  /* Captain America color palette courtesy of color-hex.com/color-palette/20730 */
 }
 
 #char-display {
-  background: green;
+  background: rgba(80, 74, 74, .8);
   min-height: 300px;
   display: flex;
   flex-direction: row;
@@ -42,7 +46,7 @@ img {
 }
 
 #name {
-  background: red;
+  background: rgba(81, 140, 202, .8);
 }
 
 #button-house {
@@ -51,7 +55,7 @@ img {
 }
 
 #addl {
-  background: purple;
+  background: rgba(247, 143, 63, .8);
   min-width: 200px;
   min-height: 200px;
   margin: 10px;
@@ -64,15 +68,23 @@ img {
   margin: 5px;
 }
 
+#right {
+  margin-left: auto;
+}
+
 #team {
   max-width: 310px;
   min-width: 300px;
   min-height: 1000px;
   display: flex;
   flex-direction: column;
-  background: blue;
+  background: rgba(0, 0, 0, .8);
   margin: 5px;
   padding: 5px;
+}
+
+.team-member {
+  transition: 1s;
 }
 
 #leader {
