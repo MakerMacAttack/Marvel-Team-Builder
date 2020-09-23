@@ -55,7 +55,7 @@ async function getChar(name) {
     //     // Learned how to use md5 from a YouTuber named Junior Developer Central
     const response = await axios.get(`${base}${endpoint}${name}&limit=1&ts=${ts}&apikey=${apikey}&hash=${hash}`)
     const char = response.data.data.results[0]
-    console.log(char.id)
+    // console.log(char.id)
     newInfo(char)
   } catch (error) {
     console.log(`Error: ${error}`)
@@ -126,15 +126,14 @@ async function moreInfo(char, more) {
   more.disabled = true
 }
 
-function checkAdd() {
+function checkAdd(add) {
   let team = document.querySelectorAll("#team div")
   if (team.length === 5) {
-    const add = document.querySelector('#add')
     add.disabled = true
   }
 }
 
-function addChar(char) {
+function addChar(char, add) {
   let image = document.createElement('img')
   let src = (char.thumbnail.path + "." + char.thumbnail.extension)
   image.src = src
@@ -146,7 +145,7 @@ function addChar(char) {
   display.append(image)
   display.append(identity)
   team.append(display)
-  checkAdd()
+  checkAdd(add)
   const remove = document.createElement('button')
   remove.innerText = "Remove"
   remove.class = "remove"
@@ -165,6 +164,7 @@ function addChar(char) {
 
 function newInfo(char) {
   clearInfo()
+  addl.style.display = "block"
   let image = document.createElement('img')
   let src = char.thumbnail.path + "." + char.thumbnail.extension
   image.src = src
@@ -174,9 +174,9 @@ function newInfo(char) {
   add.id = "add"
   add.innerText = "Add to Team"
   add.addEventListener('click', () => {
-    addChar(char)
+    addChar(char, add)
   })
-  checkAdd()
+  checkAdd(add)
   const more = document.createElement('button')
   more.id = "more"
   more.innerText = "More info"
