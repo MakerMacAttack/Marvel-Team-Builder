@@ -2,6 +2,7 @@
 
 body {
   background-image: url(gallery/background.jpg);
+  font-family: 'Chango', cursive;
 }
 
 div {
@@ -25,7 +26,7 @@ img {
 #title {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #f0f0f0;
-  text: #002d5c;
+  color: #002d5c;
   background: rgba(135, 0, 0, 0.8);
   margin: 5px;
   padding: 5px;
@@ -63,9 +64,13 @@ img {
 }
 
 #input {
-  background: yellow;
+  background: rgba(103, 23, 34, .8);
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #161f2e;
+  color: #a2babe;
   padding: 5px;
   margin: 5px;
+  /* Thor Odinson color palette courtesy of color-hex.com/color-palette/11365 */
 }
 
 #right {
