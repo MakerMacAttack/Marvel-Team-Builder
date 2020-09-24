@@ -1,5 +1,8 @@
 //Regrettably, I have confirmed that the API will not support a populated dropdown menu.
 
+
+// const dropdown = document.querySelector('#dropdown')
+
 // async function populateDropDown() {
 //   try {
 //     const ts = new Date().getTime()

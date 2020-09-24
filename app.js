@@ -1,5 +1,3 @@
-// Access - Control - Allow - Origin *
-
 const base = 'https://gateway.marvel.com'
 const endpoint = '/v1/public/characters?nameStartsWith='
 const apikey = config.PUBLIC_KEY
@@ -10,7 +8,6 @@ const name = document.querySelector('#name')
 const addl = document.querySelector('#addl')
 const buttonhaus = document.querySelector('#buttonhaus')
 const events = document.querySelector('#events')
-// const dropdown = document.querySelector('#dropdown')
 const submit = document.querySelector('#submit')
 const user_input = document.querySelector('#user-input')
 

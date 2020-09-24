@@ -122,7 +122,7 @@ Base functionality will be largely the same for mobile. My thought would be that
 |Sept 22| Core Application Structure (HTML, CSS, etc.) | Complete
 |Sept 22| MVP | Complete
 |Sept 23| Basic Styling | Complete
-|Sept 24| Post MVP, Advanced Styling | Incomplete
+|Sept 24| Post MVP, Advanced Styling | Complete
 |Sept 25| Presentations | Incomplete
 
 ## Priority Matrix
@@ -143,14 +143,14 @@ Base functionality will be largely the same for mobile. My thought would be that
 | Advanced Team Functionality | L | 3hrs | 2hr | 2hr |
 | Basic CSS | H | 2hrs | 3hr | 3hr |
 | Comic Appearances | L | 2hrs | 30m | 30m |
-| Responsiveness | H | 3hrs |  |  |
+| Responsiveness | H | 3hrs | 1hr | 1hr |
 | Reduce Appearance Array | l | 3hrs | - | - |
 | Advanced CSS | M | 3hrs | 3hr |  |
-| Wrestle with CSS more | L | 3hrs | 2hr30m |  |
-| Panic and fix unexpected issues | M | 3hrs | 2hr30m |  |
-| CSS De-bugging | M | 3hrs | 2hr30m |  |
-| Style Choices | L | 3hrs | 2hr |  |
-| Keep ReadMe updated | M | 3hrs | 1hr30m |  |
+| Wrestle with CSS more | L | 3hrs | 3hr30m |  |
+| Panic and fix unexpected issues | M | 3hrs | 3hr30m |  |
+| CSS De-bugging | M | 3hrs | 3hr30m |  |
+| Style Choices | L | 3hrs | 4hr |  |
+| Keep ReadMe updated | M | 3hrs | 2hr |  |
 | Total | H | 44hrs15m |  |  |
 
 ## Code Snippet
