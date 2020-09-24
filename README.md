@@ -2,7 +2,7 @@
 
 ## Marvel-Team-Builder
 
-deploy
+[Link to deploy](https://makermacattack.github.io/Marvel-Team-Builder/)
 
 ## Project Description
 
