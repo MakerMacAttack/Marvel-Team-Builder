@@ -155,7 +155,17 @@ Base functionality will be largely the same for mobile. My thought would be that
 
 ## Code Snippet
 
-TBA
+```function makeLeader(div) {
+  let leader = document.querySelector("#leader")
+  if (leader) {
+    let make_leader = document.querySelector('#leader .make-leader')
+    make_leader.disabled = false
+    leader.removeAttribute('id')
+  }
+  div.id = 'leader'
+  let leader_button = div.querySelector(".make-leader")
+  leader_button.disabled = true
+}```
 
 ## Change Log
  

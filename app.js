@@ -95,7 +95,7 @@ async function moreInfo(char, more) {
     eventItem.innerText = element.title
     events.append(eventItem)
   });
-  // Can't more twice for the same character.
+  // Can't get more info twice for the same character.
   more.disabled = true
 }
 
@@ -111,11 +111,9 @@ function checkAdd(add) {
 function addChar(char, add) {
   // Creates properties for the image and name, displays them in Team section.
   let image = document.createElement('img')
-  let src = (char.thumbnail.path + "." + char.thumbnail.extension)
-  image.src = src
-  let name = char.name
+  image.src = (char.thumbnail.path + "." + char.thumbnail.extension)
   let identity = document.createElement('p')
-  identity.innerText = name
+  identity.innerText = char.name
   let display = document.createElement('div')
   display.className = "team-member"
   display.append(image)
@@ -149,8 +147,7 @@ function newInfo(char) {
   name.style.display = "block"
   // Create the elements and display them
   let image = document.createElement('img')
-  let src = char.thumbnail.path + "." + char.thumbnail.extension
-  image.src = src
+  image.src = char.thumbnail.path + "." + char.thumbnail.extension
   name.innerText = char.name
   face.append(image)
   // Create and append buttons
