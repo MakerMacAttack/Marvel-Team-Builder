@@ -1,0 +1,30 @@
+//Regrettably, I have confirmed that the API will not support a populated dropdown menu.
+
+// async function populateDropDown() {
+//   try {
+//     const ts = new Date().getTime()
+//     const hash = md5(ts + privateKey + apikey)
+//     // Learned how to use md5 from a YouTuber named Junior Developer Central
+//     const response = await axios.get(`${base}/v1/public/characters?orderBy=name&limit=100&ts=${ts}&apikey=${apikey}&hash=${hash}`)
+//     const list = response.data.data.results
+//     console.log(list)
+//     let randomSelect = Math.floor(Math.random() * (list.length - 1))
+//     for (let i = 0; i < list.length; i++) {
+//       const option = document.createElement('option')
+//       option.value = list[i].name
+//       option.innerText = list[i].name
+//       if (i === randomSelect) {
+//         option.selected = true
+//       }
+//       dropdown.append(option)
+//     }
+//   } catch (error) {
+//     console.log(`Error: ${error}`)
+//     const option = document.createElement('option')
+//     option.value = ''
+//     option.innerText = "MODOK has destroyed the dropdown"
+//     dropdown.append(option)
+//   }
+// }
+
+// populateDropDown()
