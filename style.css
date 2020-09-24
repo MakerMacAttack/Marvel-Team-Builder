@@ -1,17 +1,23 @@
 /* Marvel color palette courtesy of color-hex.com/color-palette/6563 */
 
+* {
+  transition: .5s;
+}
+
 body {
   background-image: url(gallery/background.jpg);
   font-family: 'Chango', cursive;
 }
 
 div {
-  border-radius: 25px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
 }
 
 img {
   max-width: 250px;
-  
+  border: 3px solid #504a4a;
 }
 
 button {
@@ -87,7 +93,6 @@ button:disabled:hover {
   min-width: 200px;
   min-height: 200px;
   margin: 10px;
-  padding: 10px;
   display: none;
 }
 
@@ -115,19 +120,18 @@ button:disabled:hover {
   background: rgba(121, 13, 13, .8);
   margin: 5px;
   padding: 15px;
+  text-align: center;
   /* Iron Man color palette courtesy of color-hex.com/color-palette/4553 */
 }
 
 .team-member {
   background: rgba(190, 186, 70, .8);
-  padding: 10px;
 }
-
-/* .team-member p {
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 #leader {
   order: -1;
+}
+
+#leader img {
+  border: 10px ridge #518cca;
 }

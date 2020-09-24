@@ -119,9 +119,9 @@ Base functionality will be largely the same for mobile. My thought would be that
 |Sept 18-21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Sept 21| Project Approval | Complete
 |Sept 21| Specification, Psuedocode | Complete
-|Sept 22| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Sept 22| MVP | Incomplete
-|Sept 23| Basic Styling | Incomplete
+|Sept 22| Core Application Structure (HTML, CSS, etc.) | Complete
+|Sept 22| MVP | Complete
+|Sept 23| Basic Styling | Complete
 |Sept 24| Post MVP, Advanced Styling | Incomplete
 |Sept 25| Presentations | Incomplete
 
@@ -146,9 +146,9 @@ Base functionality will be largely the same for mobile. My thought would be that
 | Responsiveness | H | 3hrs |  |  |
 | Reduce Appearance Array | l | 3hrs | - | - |
 | Advanced CSS | M | 3hrs | 3hr |  |
-| Wrestle with CSS more | L | 3hrs | 2hr |  |
+| Wrestle with CSS more | L | 3hrs | 2hr30m |  |
 | Panic and fix unexpected issues | M | 3hrs | 2hr30m |  |
-| CSS De-bugging | M | 3hrs | 2hr |  |
+| CSS De-bugging | M | 3hrs | 2hr30m |  |
 | Style Choices | L | 3hrs | 2hr |  |
 | Keep ReadMe updated | M | 3hrs | 1hr30m |  |
 | Total | H | 44hrs15m |  |  |
