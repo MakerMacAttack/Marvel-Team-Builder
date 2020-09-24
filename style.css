@@ -13,6 +13,11 @@ div {
   border-radius: 10px;
   padding: 10px;
   margin: 5px;
+  /* border: 1px solid red; */
+}
+
+h2 {
+  text-decoration: underline;
 }
 
 img {
@@ -117,11 +122,16 @@ button:disabled:hover {
   min-height: 1000px;
   display: flex;
   flex-direction: column;
+  color: #8bd3fb;
   background: rgba(121, 13, 13, .8);
   margin: 5px;
   padding: 15px;
   text-align: center;
   /* Iron Man color palette courtesy of color-hex.com/color-palette/4553 */
+}
+
+#team h2 {
+  order: -2;
 }
 
 .team-member {
@@ -134,4 +144,15 @@ button:disabled:hover {
 
 #leader img {
   border: 10px ridge #518cca;
+}
+
+@media screen and (max-width: 600px) {
+  #total,
+  #char-display {
+    flex-direction: column;
+  }
+
+  #right {
+    margin-right: auto;
+  }
 }
