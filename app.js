@@ -16,6 +16,7 @@ const user_input = document.querySelector('#user-input')
 
 // example: http://gateway.marvel.com/v1/public/characters?name=${name}&ts=${ts}&apikey=${key}&hash=${hash}
 
+// Gets info from the database, based on user input, and calls the function to display the info.
 async function getChar(name) {
   try {
     user_input.value = ''
@@ -33,6 +34,7 @@ async function getChar(name) {
   }
 }
 
+// Removes any info from the display, if there is any
 function clearInfo() {
   while (face.lastChild) {
     face.lastChild.remove()
@@ -55,17 +57,20 @@ function clearInfo() {
   });
 }
 
+// Enables add button. No check since this function should only ever get called when that's safe.
 function checkAddFalse() {
   const add = document.querySelector('#add')
   add.disabled = false
 
 }
 
+// Enables the add function, since there will axiomatically be room for another character now, and then removes the character.
 function removeTeamMember(div) {
   checkAddFalse()
   div.remove()
 }
 
+// Checks if there is a current leader, and if so, deposes them. Either way, makes character leader.
 function makeLeader(div) {
   let leader = document.querySelector("#leader")
   if (leader) {
@@ -78,6 +83,7 @@ function makeLeader(div) {
   leader_button.disabled = true
 }
 
+// Gets Event info based on the character and displays it
 async function moreInfo(char, more) {
   const ts = new Date().getTime()
   const hash = md5(ts + privateKey + apikey)
@@ -92,9 +98,11 @@ async function moreInfo(char, more) {
     eventItem.innerText = element.title
     events.append(eventItem)
   });
+  // Can't more twice for the same character.
   more.disabled = true
 }
 
+// If the team is full, disables the current 'add' button.
 function checkAdd(add) {
   let team = document.querySelectorAll("#team div")
   if (team.length === 5) {
@@ -102,7 +110,9 @@ function checkAdd(add) {
   }
 }
 
+// Places current character on team
 function addChar(char, add) {
+  // Creates properties for the image and name, displays them in Team section.
   let image = document.createElement('img')
   let src = (char.thumbnail.path + "." + char.thumbnail.extension)
   image.src = src
@@ -114,7 +124,9 @@ function addChar(char, add) {
   display.append(image)
   display.append(identity)
   team.append(display)
+  // Checks if the team is full
   checkAdd(add)
+  // Creates and adds buttons for team functions.
   const remove = document.createElement('button')
   remove.innerText = "Remove"
   remove.class = "remove"
@@ -131,21 +143,27 @@ function addChar(char, add) {
   display.append(leader)
 }
 
+// Displays the info of the selected character
 function newInfo(char) {
+  // First removes previous info
   clearInfo()
+  // Because default display is none
   addl.style.display = "block"
   name.style.display = "block"
+  // Create the elements and display them
   let image = document.createElement('img')
   let src = char.thumbnail.path + "." + char.thumbnail.extension
   image.src = src
   name.innerText = char.name
   face.append(image)
+  // Create and append buttons
   const add = document.createElement('button')
   add.id = "add"
   add.innerText = "Add to Team"
   add.addEventListener('click', () => {
     addChar(char, add)
   })
+  // Check if team is full
   checkAdd(add)
   const more = document.createElement('button')
   more.id = "more"
@@ -157,6 +175,7 @@ function newInfo(char) {
   buttonhaus.append(more)
 }
 
+// Turn the key in the ignition and let the motor roar!
 submit.addEventListener('submit', (e) => {
   e.preventDefault()
   getChar(user_input.value)
