@@ -16,12 +16,13 @@ main {
 }
 
 footer {
+  font-family: 'Wire One', sans-serif;
   position: fixed;
   bottom: 0;
-  color: #b036e4;
+  color:#5a4862;
   background-color: rgba(0, 128, 0, 1);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-color: #5a4862;
   font-size: 20px;
   height: 50px;
   width: 100vw;
