@@ -15,36 +15,41 @@
 </head>
 
 <body>
-  <div id="total">
+  <!-- Total contains everything, and is broken into left and right.  -->
+  <div id="total"> 
+    <!-- Left has the title, character info, and input, all in a column. -->
     <div id="left">
       <div id="title">
         <h1>Build Your Own Marvel Dream Team!</h1>
       </div>
+      <!-- Character info is broken into first and second, side-by-side. -->
       <div id="char-display">
+        <!-- First has its own title, the image, the name, and the nested buttons. -->
         <div id="first">
           <h2>Character Info</h2>
           <div id="face"></div>
           <div id="name"></div>
           <div id="buttonhaus"></div>
         </div>
+        <!-- Second has the additional info box, which contains the events list. -->
         <div id="second">
           <div id="addl">
             <ul id="events"></ul>
           </div>
         </div>
       </div>
+      <!-- Input has the instructions, and then the form with the text box and submit buttons. -->
       <div id="input">
         <div id="instructions">
           <p>Type the name of any Marvel character and click 'Submit'.</p>
         </div>
         <form id="submit">
-          <!-- <select name="chars" id="dropdown">
-          </select> -->
           <input type="text" id="user-input" placeholder="Name of character">
           <button>Submit</button>
         </form>
       </div>
     </div>
+    <!-- Right contains nothing but the team section. -->
     <div id="right">
       <div id="team">
         <h2>Your Team</h2>

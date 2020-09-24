@@ -1,5 +1,7 @@
 //Regrettably, I have confirmed that the API will not support a populated dropdown menu.
 
+          <!-- <select name="chars" id="dropdown">
+          </select> -->
 
 // const dropdown = document.querySelector('#dropdown')
 
