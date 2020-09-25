@@ -19,7 +19,7 @@ const nav_team = document.querySelector('#nav-team')
 
 // Independent listener events
 
-nav_top.addEventListener('click', () => document.location='#title')
+nav_top.addEventListener('click', () => document.location='#left')
 nav_team.addEventListener('click', () => document.location='#team')
 
 // example: http://gateway.marvel.com/v1/public/characters?name=${name}&ts=${ts}&apikey=${key}&hash=${hash}
