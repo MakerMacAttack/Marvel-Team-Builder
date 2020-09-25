@@ -106,7 +106,7 @@ button:disabled:hover {
 
 #char-display {
   background: rgba(160, 96, 172, .8);
-  min-height: 300px;
+  min-height: 250px;
   display: flex;
   flex-direction: row;
   color: #030303;
@@ -115,14 +115,14 @@ button:disabled:hover {
   -webkit-text-stroke-color: #D4AF37
 }
 
-#first button {
-  -webkit-text-stroke-width: 0;
-}
-
 #first {
   display: flex;
   flex-direction: column;
   min-width: 200px;
+}
+
+#first button {
+  -webkit-text-stroke-width: 0;
 }
 
 #name {

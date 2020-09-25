@@ -1,7 +1,11 @@
+// Global variables
+
 const base = 'https://gateway.marvel.com'
 const endpoint = '/v1/public/characters?nameStartsWith='
 const apikey = config.PUBLIC_KEY
 const privateKey = config.SECRET_KEY
+
+// Global elements
 
 const face = document.querySelector('#face')
 const name = document.querySelector('#name')
@@ -10,6 +14,13 @@ const buttonhaus = document.querySelector('#buttonhaus')
 const events = document.querySelector('#events')
 const submit = document.querySelector('#submit')
 const user_input = document.querySelector('#user-input')
+const nav_top = document.querySelector('#nav-top')
+const nav_team = document.querySelector('#nav-team')
+
+// Independent listener events
+
+nav_top.addEventListener('click', () => document.location='#title')
+nav_team.addEventListener('click', () => document.location='#team')
 
 // example: http://gateway.marvel.com/v1/public/characters?name=${name}&ts=${ts}&apikey=${key}&hash=${hash}
 
