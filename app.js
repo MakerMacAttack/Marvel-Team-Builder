@@ -65,11 +65,18 @@ function clearInfo() {
   });
 }
 
+// If the team is full, disables the current 'add' button.
+function checkAdd(add) {
+  let team = document.querySelectorAll("#team div")
+  if (team.length === 5) {
+    add.disabled = true
+  }
+}
+
 // Enables add button. No check since this function should only ever get called when that's safe.
 function checkAddFalse() {
   const add = document.querySelector('#add')
   add.disabled = false
-
 }
 
 // Enables the add function, since there will axiomatically be room for another character now, and then removes the character.
@@ -108,14 +115,6 @@ async function moreInfo(char, more) {
   });
   // Can't get more info twice for the same character.
   more.disabled = true
-}
-
-// If the team is full, disables the current 'add' button.
-function checkAdd(add) {
-  let team = document.querySelectorAll("#team div")
-  if (team.length === 5) {
-    add.disabled = true
-  }
 }
 
 // Places current character on team
