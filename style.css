@@ -20,7 +20,6 @@ header {
   height: 40px;
   align-content: center;
   width: 100vw;
-  align-content: center;
 }
 
 main {
@@ -200,6 +199,7 @@ button:disabled:hover {
 
   header {
     display: flex;
+    justify-content: center;
   }
 
   main,
