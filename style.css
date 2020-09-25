@@ -9,6 +9,19 @@ body {
   font-family: 'Chango', cursive;
 }
 
+header {
+  display: none;
+  position: fixed;
+  top: 0;
+  background: rgba(41, 41, 41, 1); /* Leaving this in this format in case I decide to play around with opacity */
+  color: #f12821;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffc100;
+  height: 40px;
+  align-content: center;
+  width: 100vw;
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -182,13 +195,19 @@ button:disabled:hover {
   border: 10px ridge #518cca;
 }
 
-#copyright {
-}
-
 @media screen and (max-width: 1000px) {
+
+  header {
+    display: flex;
+  }
+
   main,
   #char-display {
     flex-direction: column;
+  }
+
+  main {
+    margin-top: 40px;
   }
 
   footer {
