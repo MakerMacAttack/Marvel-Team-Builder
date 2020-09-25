@@ -135,10 +135,10 @@ Base functionality will be largely the same for mobile. My thought would be that
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Craft Specification | M | 2hrs| 1hr15m |  |
+| Craft Specification | M | 2hrs| 1hr15m | 1hr15m |
 | Barebones HTML | H | 15m| 30m | 30m |
-| Pseudocode Project | H | 3hrs| 2hr |  |
-| Search for Characters | H | 2hrs| 1hr15m |  |
+| Pseudocode Project | H | 3hrs| 2hr | 2hr |
+| Search for Characters | H | 2hrs| 1hr30m | 1hr30m |
 | Dropdown Menu | M | 2hrs | 1hr15m | 1h15m |
 | Team Area | M | 2hrs | 1hr | 1hr |
 | Basic Team Functionality | L | 3hrs | 2hr | 2hr |
@@ -147,13 +147,13 @@ Base functionality will be largely the same for mobile. My thought would be that
 | Comic Appearances | L | 2hrs | 30m | 30m |
 | Responsiveness | H | 3hrs | 1hr | 1hr |
 | Reduce Appearance Array | l | 3hrs | - | - |
-| Advanced CSS | M | 3hrs | 3hr |  |
-| Wrestle with CSS more | L | 3hrs | 3hr30m |  |
-| Panic and fix unexpected issues | M | 3hrs | 3hr30m |  |
-| CSS De-bugging | M | 3hrs | 3hr30m |  |
-| Style Choices | L | 3hrs | 4hr |  |
-| Keep ReadMe updated | M | 3hrs | 2hr |  |
-| Total | H | 44hrs15m |  |  |
+| Advanced CSS | M | 3hrs | 5hr | 5hr |
+| Wrestle with CSS more | L | 3hrs | 4hr | 4hr |
+| Panic and fix unexpected issues | M | 3hrs | 4hr | 4hr |
+| CSS De-bugging | M | 3hrs | 3hr30m | 3hr30m |
+| Style Choices | L | 3hrs | 4hr30m | 4hr30m |
+| Keep ReadMe updated | M | 3hrs | 2hr30m | 2hr30m |
+| Total | H | 44hrs15m | 35hr30m | 35hr30m |
 
 ## Code Snippet
 
