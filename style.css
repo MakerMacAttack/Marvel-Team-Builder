@@ -69,6 +69,8 @@ img {
 
 button {
   /* Black Widow color palette courtesy of color-hex.com/color-palette/20731 */
+  border-radius: 5px;
+  margin: 5px;
   border: solid 1px #292929;
   background: #f0e3d3;
   color: #292929;
