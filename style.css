@@ -204,6 +204,10 @@ button:disabled:hover {
     justify-content: center;
   }
 
+  img {
+    max-width: 150px;
+  }
+
   main,
   #char-display {
     flex-direction: column;
